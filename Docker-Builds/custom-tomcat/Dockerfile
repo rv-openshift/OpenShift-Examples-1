@@ -3,8 +3,7 @@
 # locally before creating the OpenShift configuration.
 # Do not forget that when a Docker build is triggered in OpenShift, the "FROM"
 # line is rewritten with the correct imagestreamtag. 
-FROM centos:latest
-#quay.io/venerayan/fixpip3:v1
+FROM quay.io/venerayan/fixpip3:v1
 
 # The tomcat archive URL will be given at build time
 ARG TOMCAT_URL
